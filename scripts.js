@@ -79,8 +79,15 @@ function init() {
             
         let newPosition = parseInt(numericValue3[0]) -10;
 
+        
+
         console.log(newPosition)
             rocket.style.left = String(newPosition)+"px";
+
+        if (newPosition <=0){
+            
+            rocket.style.right = String(newPosition)+"px";
+        }
 
     })
 
